@@ -1,16 +1,140 @@
-# Stone Trace SMS Notifications
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone Trace SMS Notifications</title>
 
-**Mobile Phone Number:**  
-[Phone Number]
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #222;
+    }
 
-☐ **I agree to receive automated SMS notifications from Stone Trace regarding configured location and geofence alerts at the mobile number provided.**
+    h1 {
+      margin-bottom: 25px;
+    }
 
-Message frequency varies based on configured alerts and activity. Message and data rates may apply. Consent is not a condition of purchase. Reply STOP to opt out at any time or HELP for assistance.
+    label {
+      display: block;
+      margin-top: 20px;
+    }
 
-By opting in, you acknowledge the Stone Trace Terms of Service and Privacy Policy.
+    input[type="tel"] {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
 
-**Stone Trace Privacy Policy:**  
-https://stonetrace.github.io/privacy.html
+    .consent {
+      margin-top: 25px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
 
-**Stone Trace Terms and Conditions:**  
-https://stonetrace.github.io/terms.html
+    .consent input {
+      margin-top: 6px;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .disclosure {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Stone Trace SMS Notifications</h1>
+
+  <form>
+
+    <label for="phone">
+      <strong>Mobile Phone Number:</strong>
+    </label>
+
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="(555) 555-5555"
+      required
+    >
+
+    <div class="consent">
+
+      <input
+        type="checkbox"
+        id="sms-consent"
+        name="sms-consent"
+        required
+      >
+
+      <label for="sms-consent">
+        <strong>
+          I agree to receive automated SMS notifications from Stone Trace
+          regarding configured location and geofence alerts at the mobile
+          number provided.
+        </strong>
+      </label>
+
+    </div>
+
+    <div class="disclosure">
+
+      <p>
+        Message frequency varies based on configured alerts and activity.
+        Message and data rates may apply. Consent is not a condition of
+        purchase. Reply STOP to opt out at any time or HELP for assistance.
+      </p>
+
+      <p>
+        By opting in, you acknowledge the Stone Trace Terms of Service
+        and Privacy Policy.
+      </p>
+
+    </div>
+
+    <button type="submit">Opt In to SMS Notifications</button>
+
+  </form>
+
+  <div class="links">
+
+    <p>
+      <strong>Stone Trace Privacy Policy:</strong><br>
+      <a href="https://stonetrace.github.io/privacy.html">
+        https://stonetrace.github.io/privacy.html
+      </a>
+    </p>
+
+    <p>
+      <strong>Stone Trace Terms and Conditions:</strong><br>
+      <a href="https://stonetrace.github.io/terms.html">
+        https://stonetrace.github.io/terms.html
+      </a>
+    </p>
+
+  </div>
+
+</body>
+</html>
